@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: 'Tejas Pokale',
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className='rubik vsc-initialized'>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-NF5MRK9L7Y" />
     </html>
   )
 }

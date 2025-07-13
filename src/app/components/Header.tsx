@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const getLinkClass = (section: string) =>
-    `text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-200 ${
+    `text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white ${
       activeSection === section
         ? "text-purple-600 dark:text-purple-400 font-medium"
         : ""
@@ -48,14 +48,20 @@ const Header: React.FC<HeaderProps> = ({
             {/* Desktop Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="p-3 text-gray-600 rounded-lg cursor-pointer hover:bg-black/5 dark:text-gray-300 dark:hover:bg-white/10"
+              className="p-3 text-gray-600 rounded-lg cursor-pointer hover:bg-black/5 dark:text-gray-300 dark:hover:bg-white/10 group"
               aria-label="Toggle theme"
               title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
             >
               {darkMode ? (
-                <Sun size={20} className="w-5 h-5" />
+                <Sun
+                  size={20}
+                  className="w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
+                />
               ) : (
-                <Moon size={20} className="w-5 h-5" />
+                <Moon
+                  size={20}
+                  className="w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
+                />
               )}
             </button>
           </nav>
@@ -132,17 +138,23 @@ const Header: React.FC<HeaderProps> = ({
           <div className="p-6 border-t border-gray-200 dark:border-gray-800">
             <button
               onClick={toggleTheme}
-              className="flex items-center p-2 w-full text-gray-600 rounded-lg cursor-pointer hover:bg-white/10 dark:text-gray-300 dark:hover:bg-white/10"
+              className="flex items-center p-2 w-full text-gray-600 rounded-lg cursor-pointer hover:bg-white/10 dark:text-gray-300 dark:hover:bg-white/10 group"
               aria-label="Toggle theme"
             >
               {darkMode ? (
                 <>
-                  <Sun size={20} className="mr-3 w-5 h-5" />
+                  <Sun
+                    size={20}
+                    className="mr-3 w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
+                  />
                   <span className="text-lg">Light Mode</span>
                 </>
               ) : (
                 <>
-                  <Moon size={20} className="mr-3 w-5 h-5" />
+                  <Moon
+                    size={20}
+                    className="mr-3 w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
+                  />
                   <span className="text-lg">Dark Mode</span>
                 </>
               )}

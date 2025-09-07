@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Header from "./components/Header";
-import Loading from "./components/Loading";
 import {
   Github as GithubIcon,
   Linkedin as LinkedinIcon,
@@ -13,41 +12,18 @@ import {
 } from "lucide-react";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(Boolean);
-  const [loading, setIsLoading] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
-  useEffect(() => {
-    // Check if user has a theme preference in localStorage
-    const isDark = localStorage.getItem("theme") === "dark";
-    setDarkMode(isDark);
-
-    // Apply the theme class to the HTML element
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 400);
-  }, []);
   const toggleTheme = () => {
     const newMode = !darkMode;
     setDarkMode(newMode);
-
     // Update localStorage and class
     if (newMode) {
       document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
     }
   };
-
-  if (loading) {
-    return <Loading />;
-  }
 
   return (
     <div className="min-h-screen bg-white dark:bg-black">
@@ -59,11 +35,11 @@ export default function Home() {
             Tejas Pokale
           </h1>
           <p className="mb-2 font-normal text-gray-600 transition-colors duration-300 text-sm md:text-xl dark:text-gray-400 jb">
-            B.Tech IT Student | Full Stack Developer | DevOps Enthusiast |
-            Problem Solver
+            B.Tech IT Student | Software Developer | OSS Contributer | Problem
+            Solver
           </p>
           <Link
-            href="https://drive.google.com/file/d/1FjAxuguOMdW31ln9c0vlAbk8RrZ6dv5o/view?usp=sharing"
+            href="https://drive.google.com/file/d/1PysuG8o0w1bQhqNzZSlheYrbbqUJt2XT/view?usp=sharing"
             target="_blank"
             className="jb inline-flex items-center px-3 py-1 mt-6 text-base font-medium text-gray-600 rounded-lg border border-gray-600 dark:text-gray-400 dark:border-gray-500 hover:text-black hover:border-black dark:hover:text-gray-300 dark:hover:border-gray-400"
           >
@@ -80,16 +56,23 @@ export default function Home() {
           <div className="p-2">
             <p className="leading-relaxed text-gray-600 text-md dark:text-gray-300">
               I am a Final year <span className="font-bold">IT student</span> at
-              PCCoE Pune, a Full Stack Developer (
-              <span className="font-bold">Next.js</span>,{" "}
-              <span className="font-bold">MERN</span>), and actively working
-              with <span className="font-bold">DevOps</span> practices (
-              <span className="font-bold">Docker</span>,{" "}
-              <span className="font-bold">AWS</span>). I&apos;ve solved{" "}
-              <span className="font-bold">350+</span> DSA problems across
-              LeetCode, GFG, and CodeChef, with a LeetCode contest rating of{" "}
-              <span className="font-bold">1570+</span>, and have strong
-              problem-solving skills.
+              PCCoE Pune, a skilled
+              <span className="font-bold"> Full Stack Developer</span>{" "}
+              specializing in
+              <span className="font-bold"> Next.js</span> and
+              <span className="font-bold"> MERN</span>, with hands-on experience
+              in
+              <span className="font-bold"> DevOps</span> using
+              <span className="font-bold"> Docker</span> and
+              <span className="font-bold"> AWS</span>. I&apos;ve solved
+              <span className="font-bold"> 500+</span> DSA problems across
+              LeetCode, GFG, CodeChef, and CodeForces, achieving a LeetCode
+              contest rating of
+              <span className="font-bold"> 1570+</span>. I am also an active
+              <span className="font-bold"> open-source contributor</span> with
+              <span className="font-bold"> 600+</span> GitHub contributions,
+              reflecting my strong problem-solving skills and commitment to
+              collaboration.
             </p>
           </div>
         </section>
@@ -157,6 +140,61 @@ export default function Home() {
           <div className="space-y-6">
             <div className="p-6 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5">
               <p className="mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
+                Full Stack Developer Intern
+              </p>
+              <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">
+                Unihox Technologies | Remote | June 2025 – August 2025
+              </p>
+              <ul className="pl-5 mb-2 space-y-1 list-disc text-gray-700 dark:text-gray-300">
+                <li>
+                  Worked on an end-to-end{" "}
+                  <span className="font-bold">
+                    AI-powered fitness and wellness SaaS platform
+                  </span>
+                  (web + mobile) using{" "}
+                  <span className="font-bold">Next.js</span>,{" "}
+                  <span className="font-bold">React Native</span>, and
+                  <span className="font-bold"> Node.js</span>. Integrated AI
+                  chatbot and agent systems to track yoga, workouts,
+                  mindfulness, hydration, and sleep routines, delivering{" "}
+                  <span className="font-bold">personalized experiences</span>
+                  and streamlining workflows for enhanced{" "}
+                  <span className="font-bold">user retention</span>.
+                </li>
+                <li>
+                  Developed a{" "}
+                  <span className="font-bold">
+                    client-facing interior design and furniture e-commerce
+                    platform
+                  </span>
+                  along with the company&apos;s official website; emphasized{" "}
+                  <span className="font-bold">intuitive UI/UX</span>, applied
+                  <span className="font-bold"> advanced SEO techniques</span>,
+                  and optimized performance with
+                  <span className="font-bold"> Valkey caching</span>, resulting
+                  in <span className="font-bold">faster load times</span>
+                  and improved search rankings.
+                </li>
+                <li>
+                  Implemented automated{" "}
+                  <span className="font-bold">CI/CD pipelines</span> to
+                  accelerate deployments, ensuring
+                  <span className="font-bold"> reliable</span>,{" "}
+                  <span className="font-bold">scalable delivery</span>, and
+                  reducing deployment time by{" "}
+                  <span className="font-bold">40%</span>.
+                </li>
+              </ul>
+              <p className="text-gray-700 dark:text-gray-300">
+                <span className="font-semibold">Tech Stack:</span> Next.js,
+                React.js, Node.js, Valkey, Docker, AWS
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            <div className="p-6 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5">
+              <p className="mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Web Developer Intern
               </p>
               <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">
@@ -190,7 +228,7 @@ export default function Home() {
                 </li>
               </ul>
               <p className="text-gray-700 dark:text-gray-300">
-                <span className="font-semibold">Tech Stack:</span> React,
+                <span className="font-semibold">Tech Stack:</span> React.js,
                 Node.js, Express.js, MongoDB
               </p>
             </div>
@@ -289,39 +327,56 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+          </div>
 
-            {/* Django Project */}
-            <div className="p-6 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5">
-              <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
-                Django App Containerization
-                <a
-                  href="https://github.com/tejaspokale22/django-app-containerization"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-purple-600 hover:underline dark:text-purple-400"
-                >
-                  GitHub
-                </a>
-              </p>
-              <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">
-                Docker, Django, React, Python, MySQL, Nginx
-              </p>
-              <ul className="pl-5 mb-4 space-y-1 list-disc text-gray-700 dark:text-gray-300">
-                <li>
-                  Containerized a full-stack{" "}
-                  <span className="font-bold">three-tier application</span> with{" "}
-                  <span className="font-bold">Django</span>,{" "}
-                  <span className="font-bold">React</span>, and{" "}
-                  <span className="font-bold">MySQL</span>, using{" "}
-                  <span className="font-bold">Nginx</span> as a reverse proxy,
-                  custom <span className="font-bold">Dockerfiles</span>, and
-                  automated deployment via{" "}
-                  <span className="font-bold">Docker Compose</span> with
-                  dedicated docker{" "}
-                  <span className="font-bold">networks and volumes</span>.
-                </li>
-              </ul>
-            </div>
+          {/* CipheDocs} */}
+          <div className="p-6 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5">
+            <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
+              CipherDocs
+              <a
+                href="https://github.com/tejaspokale22/CipherDocs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-purple-600 hover:underline dark:text-purple-400"
+              >
+                GitHub
+              </a>
+            </p>
+            <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">
+              Blockchain, IPFS, Node.js, LLM, AI
+            </p>
+            <ul className="pl-5 mb-4 space-y-1 list-disc text-gray-700 dark:text-gray-300">
+              <li>
+                Developed a{" "}
+                <span className="font-bold">
+                  academic certificate verification system
+                </span>
+                that eliminates document forgery and ensures data integrity
+                using <span className="font-bold">blockchain</span>,
+                <span className="font-bold"> IPFS</span>, and{" "}
+                <span className="font-bold">hash functions</span>, creating an
+                immutable, tamper-proof trail of records.
+              </li>
+              <li>
+                Implemented role-based access for{" "}
+                <span className="font-bold">
+                  issuers, verifiers, and students
+                </span>{" "}
+                for seamless document sharing and validation, integrated an{" "}
+                <span className="font-bold">
+                  AI-based authenticity scoring engine
+                </span>{" "}
+                and{" "}
+                <span className="font-bold">
+                  LLM-powered automated verification workflows
+                </span>
+                , significantly reducing manual effort while enhancing{" "}
+                <span className="font-bold">
+                  trust, transparency, and efficiency
+                </span>{" "}
+                in academic and employment processes.
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -331,10 +386,29 @@ export default function Home() {
           </h2>
           <div className="p-2 bg-white rounded-xl dark:bg-black">
             <ul className="pl-6 space-y-3 list-disc text-gray-700 dark:text-gray-300">
-              <li>Achieved a LeetCode contest rating of 1570+.</li>
               <li>
-                Solved over 450+ DSA problems across LeetCode, GFG, and
-                CodeChef.
+                Solved <span className="font-bold">500+ DSA problems</span>{" "}
+                across LeetCode, GFG, CodeChef, and CodeForces; achieved a{" "}
+                <span className="font-bold">
+                  LeetCode contest rating of 1570+
+                </span>{" "}
+                and earned SQL proficiency badge.
+              </li>
+              <li>
+                Contributed to{" "}
+                <span className="font-bold">2-3 open-source projects</span> with
+                merged pull requests; have{" "}
+                <span className="font-bold">600+ GitHub contributions</span>,
+                demonstrating consistent collaboration and code quality.
+              </li>
+              <li>
+                Certified in{" "}
+                <span className="font-bold">AWS Educate Cloud Computing</span>,{" "}
+                <span className="font-bold">C++ (Udemy)</span>, and{" "}
+                <span className="font-bold">
+                  Python Programming by GeeksforGeeks
+                </span>
+                .
               </li>
             </ul>
           </div>

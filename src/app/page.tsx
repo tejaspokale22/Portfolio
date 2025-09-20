@@ -70,9 +70,9 @@ export default function Home() {
               contest rating of
               <span className="font-bold"> 1570+</span>. I am also an active
               <span className="font-bold"> open-source contributor</span> with
-              <span className="font-bold"> 600+</span> GitHub contributions,
-              reflecting my strong problem-solving skills and commitment to
-              collaboration.
+              <span className="font-bold"> 600+</span> GitHub contributions and
+              multiple merged PRs reflecting my strong problem-solving skills
+              and commitment to collaboration.
             </p>
           </div>
         </section>
@@ -138,7 +138,7 @@ export default function Home() {
             Work Experience
           </h2>
           <div className="space-y-6">
-            <div className="p-6 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5">
+            <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
               <p className="mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Full Stack Developer Intern
               </p>
@@ -149,10 +149,9 @@ export default function Home() {
                 <li>
                   Worked on an end-to-end{" "}
                   <span className="font-bold">
-                    AI-powered fitness and wellness SaaS platform
+                    AI-Powered fitness and wellness SaaS platform{" "}
                   </span>
-                  (web + mobile) using{" "}
-                  <span className="font-bold">Next.js</span>,{" "}
+                  using <span className="font-bold">Next.js</span>,{" "}
                   <span className="font-bold">React Native</span>, and
                   <span className="font-bold"> Node.js</span>. Integrated AI
                   chatbot and agent systems to track yoga, workouts,
@@ -164,16 +163,15 @@ export default function Home() {
                 <li>
                   Developed a{" "}
                   <span className="font-bold">
-                    client-facing interior design and furniture e-commerce
-                    platform
+                    interior design and furniture e-comm platform for a client{" "}
                   </span>
-                  along with the company&apos;s official website; emphasized{" "}
+                  along with the company&apos;s official website emphasized on{" "}
                   <span className="font-bold">intuitive UI/UX</span>, applied
                   <span className="font-bold"> advanced SEO techniques</span>,
                   and optimized performance with
-                  <span className="font-bold"> Valkey caching</span>, resulting
-                  in <span className="font-bold">faster load times</span>
-                  and improved search rankings.
+                  <span className="font-bold"> valkey caching</span>, resulting
+                  in <span className="font-bold">faster load times </span>
+                  and improved google search rankings.
                 </li>
                 <li>
                   Implemented automated{" "}
@@ -187,18 +185,18 @@ export default function Home() {
               </ul>
               <p className="text-gray-700 dark:text-gray-300">
                 <span className="font-semibold">Tech Stack:</span> Next.js,
-                React.js, Node.js, Valkey, Docker, AWS
+                React.js, Node.js, Redis, Docker, AWS, CI/CD, Figma
               </p>
             </div>
           </div>
 
           <div className="space-y-6">
-            <div className="p-6 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5">
+            <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
               <p className="mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Web Developer Intern
               </p>
               <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">
-                PCET Pune | Sept 2024 – Jan 2025
+                PCET Pune | Sept 2024 – Dec 2024
               </p>
               <ul className="pl-5 mb-2 space-y-1 list-disc text-gray-700 dark:text-gray-300">
                 <li>
@@ -229,7 +227,7 @@ export default function Home() {
               </ul>
               <p className="text-gray-700 dark:text-gray-300">
                 <span className="font-semibold">Tech Stack:</span> React.js,
-                Node.js, Express.js, MongoDB
+                Node.js, Express.js, MongoDB Atlas
               </p>
             </div>
           </div>
@@ -241,7 +239,7 @@ export default function Home() {
           </h2>
           <div className="space-y-4">
             {/* QuickGigs Project */}
-            <div className="p-6 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5">
+            <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
               <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
                 QuickGigs
                 <a
@@ -287,7 +285,7 @@ export default function Home() {
             </div>
 
             {/* Greenify Project */}
-            <div className="p-6 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5">
+            <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
               <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Greenify
                 <a
@@ -330,7 +328,7 @@ export default function Home() {
           </div>
 
           {/* CipheDocs} */}
-          <div className="p-6 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5">
+          <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
             <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
               CipherDocs
               <a

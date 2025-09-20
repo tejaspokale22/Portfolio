@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const getLinkClass = (section: string) =>
-    `text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white ${
+    `text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white dark:active:text-gray-400 active:text-gray-700 ${
       activeSection === section
         ? "text-purple-600 dark:text-purple-400 font-medium"
         : ""
@@ -29,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({
           {/* Logo */}
           <Link
             href="/"
-            className="text-2xl font-bold text-gray-900 dark:text-white"
+            className="text-2xl font-bold text-gray-900 dark:text-white dark:active:text-gray-400"
           >
             TP
           </Link>

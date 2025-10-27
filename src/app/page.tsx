@@ -50,35 +50,36 @@ export default function Home() {
 
       <main className="p-6 mx-auto space-y-14 max-w-5xl">
         <section id="about" className="space-y-4">
-          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white">
+          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white jb">
             About Me
           </h2>
           <div className="p-2">
             <p className="leading-relaxed text-gray-600 text-md dark:text-gray-300">
-              I am a Final year <span className="font-bold">IT student</span> at
-              PCCoE Pune, a skilled
-              <span className="font-bold"> Full Stack Developer</span>{" "}
-              specializing in
-              <span className="font-bold"> Next.js</span> and
-              <span className="font-bold"> MERN</span>, with hands-on experience
+              I am a final-year <span className="font-bold">IT student</span> at
+              PCCoE, Pune, and a passionate
+              <span className="font-bold"> Software Engineer</span> specializing
               in
-              <span className="font-bold"> DevOps</span> using
+              <span className="font-bold"> Next.js</span> and the
+              <span className="font-bold"> MERN</span> stack. I also have
+              hands-on experience in
+              <span className="font-bold"> DevOps</span>, leveraging
               <span className="font-bold"> Docker</span> and
-              <span className="font-bold"> AWS</span>. I&apos;ve solved
-              <span className="font-bold"> 500+</span> DSA problems across
-              LeetCode, GFG, CodeChef, and CodeForces, achieving a LeetCode
-              contest rating of
-              <span className="font-bold"> 1570+</span>. I am also an active
-              <span className="font-bold"> open-source contributor</span> with
-              <span className="font-bold"> 600+</span> GitHub contributions and
-              multiple merged PRs reflecting my strong problem-solving skills
-              and commitment to collaboration.
+              <span className="font-bold"> AWS</span> for deployment and
+              automation. I’ve solved over{" "}
+              <span className="font-bold">500+</span> DSA problems across
+              platforms like LeetCode, GFG, CodeChef, and CodeForces, with a
+              LeetCode contest rating of
+              <span className="font-bold">1570+</span>. As an active
+              <span className="font-bold"> open-source contributor</span>, I’ve
+              made
+              <span className="font-bold">700+</span> contributions on GitHub
+              and multiple merged PRs, showcasing my consistency, collaboration,
+              and problem-solving abilities.
             </p>
           </div>
         </section>
-
         <section id="skills" className="space-y-8">
-          <h2 className="flex items-center text-3xl font-bold text-gray-900 transition-colors duration-300 dark:text-white">
+          <h2 className="flex items-center text-3xl font-bold text-gray-900 transition-colors duration-300 dark:text-white jb">
             Technical Skills
           </h2>
 
@@ -86,7 +87,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
               {/* Programming Languages */}
               <div>
-                <h3 className="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200 jb">
                   Programming Languages
                 </h3>
                 <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
@@ -101,21 +102,23 @@ export default function Home() {
 
               {/* Frameworks */}
               <div>
-                <h3 className="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200 jb">
                   Frameworks
                 </h3>
                 <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
-                  <li>React / Next.js</li>
-                  <li>Node.js / Express</li>
+                  <li>React.js</li>
+                  <li>Next.js</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
                   <li>Tailwind CSS</li>
-                  <li>Flask</li>
-                  <li>Vue.js</li>
+                  {/* <li>Flask</li>
+                  <li>Vue.js</li> */}
                 </ul>
               </div>
 
               {/* Tools & Technologies */}
               <div>
-                <h3 className="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800 dark:text-gray-200 jb">
                   Tools & Technologies
                 </h3>
                 <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
@@ -132,13 +135,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section id="experience" className="space-y-8">
-          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white">
+          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white jb">
             Work Experience
           </h2>
           <div className="space-y-6">
-            <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
+            <div className="p-7 bg-white rounded-2xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
               <p className="mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Full Stack Developer Intern
               </p>
@@ -191,7 +193,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
+            <div className="p-7 bg-white rounded-2xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
               <p className="mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Web Developer Intern
               </p>
@@ -232,14 +234,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section id="projects" className="space-y-6">
-          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white">
+          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white jb">
             Key Projects
           </h2>
           <div className="space-y-4">
             {/* QuickGigs Project */}
-            <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
+            <div className="p-7 bg-white rounded-2xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
               <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
                 QuickGigs
                 <a
@@ -285,7 +286,7 @@ export default function Home() {
             </div>
 
             {/* Greenify Project */}
-            <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
+            <div className="p-7 bg-white rounded-2xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
               <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
                 Greenify
                 <a
@@ -328,7 +329,7 @@ export default function Home() {
           </div>
 
           {/* CipheDocs} */}
-          <div className="p-7 bg-white rounded-xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
+          <div className="p-7 bg-white rounded-2xl hover:bg-gray-50 dark:bg-black dark:hover:bg-white/5 cursor-pointer">
             <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
               CipherDocs
               <a
@@ -377,9 +378,8 @@ export default function Home() {
             </ul>
           </div>
         </section>
-
         <section id="achievements" className="space-y-8">
-          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white">
+          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white jb">
             Achievements
           </h2>
           <div className="p-2 bg-white rounded-xl dark:bg-black">
@@ -418,9 +418,8 @@ export default function Home() {
             </ul>
           </div>
         </section>
-
         <section id="extracurricular" className="space-y-6">
-          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white">
+          <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white jb">
             Extra-curricular
           </h2>
           <div className="p-2 bg-white rounded-xl dark:bg-black">
@@ -438,26 +437,28 @@ export default function Home() {
               </li>
             </ul>
           </div>
-        </section>w
-
-        <section id="contact" className="py-16 bg-white dark:bg-black">
-          <div className="px-4 mx-auto max-w-2xl sm:max-w-3xl">
+        </section>
+        <section
+          id="contact"
+          className="py-16 bg-black/5 rounded-4xl dark:bg-white/5 jb"
+        >
+          <div className="px-4 mx-auto max-w-3xl">
             <div className="mb-10 text-center">
-              <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white jb">
+              <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white">
                 Get in Touch
               </h2>
-              <p className="text-base text-gray-600 dark:text-gray-400 sm:text-lg">
+              <p className="text-base text-gray-600 dark:text-gray-400">
                 Let&apos;s connect and explore how we can create something
                 impactful together.
               </p>
             </div>
             <div className="grid gap-6 md:grid-cols-2">
               {/* Contact Info Card */}
-              <div className="flex flex-col gap-5 p-6 rounded-2xl border border-gray-100 shadow-sm bg-white/80 dark:bg-black/60 dark:border-gray-800">
+              <div className="flex flex-col gap-5 p-6 rounded-3xl bg-white/80 dark:bg-black/60">
                 <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
                   Contact Information
                 </h3>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center hover:bg-purple-50 dark:hover:bg-gray-900/40 px-2 py-2 rounded-lg cursor-pointer">
                   <span className="inline-flex justify-center items-center w-9 h-9 bg-purple-100 rounded-lg dark:bg-purple-900/30">
                     <MapPin className="w-5 h-5 text-purple-600 dark:text-purple-400" />
                   </span>
@@ -465,7 +466,7 @@ export default function Home() {
                     Pune, India
                   </span>
                 </div>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center hover:bg-purple-50 dark:hover:bg-gray-900/40 px-2 py-2 rounded-lg cursor-pointer">
                   <span className="inline-flex justify-center items-center w-9 h-9 bg-purple-100 rounded-lg dark:bg-purple-900/30">
                     <svg
                       className="w-5 h-5 text-purple-600 dark:text-purple-400"
@@ -477,12 +478,12 @@ export default function Home() {
                   </span>
                   <a
                     href="mailto:tejaspokale22@gmail.com"
-                    className="text-base text-gray-700 transition-colors dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400"
+                    className="text-base text-gray-700 transition-colors dark:text-gray-300"
                   >
                     tejaspokale22@gmail.com
                   </a>
                 </div>
-                <div className="flex gap-3 items-center">
+                <div className="flex gap-3 items-center hover:bg-purple-50 dark:hover:bg-gray-900/40 px-2 py-2 rounded-lg cursor-pointer">
                   <span className="inline-flex justify-center items-center w-9 h-9 bg-purple-100 rounded-lg dark:bg-purple-900/30">
                     <svg
                       className="w-5 h-5 text-purple-600 dark:text-purple-400"
@@ -494,14 +495,14 @@ export default function Home() {
                   </span>
                   <a
                     href="tel:+918767486904"
-                    className="text-base text-gray-700 transition-colors dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400"
+                    className="text-base text-gray-700 transition-colors dark:text-gray-300"
                   >
                     +91 8767486904
                   </a>
                 </div>
               </div>
               {/* Social Links Card */}
-              <div className="flex flex-col gap-5 p-6 rounded-2xl border border-gray-100 shadow-sm bg-white/80 dark:bg-black/60 dark:border-gray-800">
+              <div className="flex flex-col gap-5 p-6 rounded-3xl bg-white/80 dark:bg-black/60">
                 <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
                   Connect with me
                 </h3>

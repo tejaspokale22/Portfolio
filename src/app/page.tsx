@@ -35,11 +35,11 @@ export default function Home() {
             Tejas Pokale
           </h1>
           <p className="mb-2 font-normal text-gray-600 transition-colors duration-300 text-sm md:text-xl dark:text-gray-400 jb">
-            B.Tech IT Student | Software Developer | OSS Contributer | Problem
+            B.Tech IT Student | Software Engineer | OSS Contributer | Problem
             Solver
           </p>
           <Link
-            href="https://drive.google.com/file/d/1sS7djbrzmVZbGgZK-23LUeHMj_OwoJeI/view?usp=sharing"
+            href="https://drive.google.com/file/d/1teX46M_MKTYblWmgLFQpCj5dfjRLxLvh/view?usp=sharing"
             target="_blank"
             className="jb inline-flex items-center px-3 py-1 mt-6 text-base font-medium text-gray-600 rounded-lg border border-gray-600 dark:text-gray-400 dark:border-gray-500 hover:text-black hover:border-black dark:hover:text-gray-300 dark:hover:border-gray-400"
           >
@@ -394,10 +394,17 @@ export default function Home() {
               </li>
               <li>
                 Contributed to{" "}
-                <span className="font-bold">2-3 open-source projects</span> with
-                merged pull requests; have{" "}
-                <span className="font-bold">600+ GitHub contributions</span>,
+                <span className="font-bold">multiple open source projects</span>{" "}
+                with merged PRs; have{" "}
+                <span className="font-bold">700+ GitHub contributions</span>,
                 demonstrating consistent collaboration and code quality.
+              </li>
+              <li>
+                Featured as a{" "}
+                <span className="font-bold">
+                  Super Contributor @ Hacktoberfest 2025
+                </span>{" "}
+                for impactful open source contributions.
               </li>
               <li>
                 Certified in{" "}
@@ -431,7 +438,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-        </section>
+        </section>w
 
         <section id="contact" className="py-16 bg-white dark:bg-black">
           <div className="px-4 mx-auto max-w-2xl sm:max-w-3xl">

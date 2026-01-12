@@ -7,15 +7,15 @@ export default function Achievements() {
       <div className="p-2 bg-white rounded-xl dark:bg-black">
         <ul className="pl-6 space-y-3 list-disc text-gray-700 dark:text-gray-300">
           <li>
-            Solved <span className="font-bold">500+ DSA problems</span> across
-            LeetCode, GFG, CodeChef, and CodeForces; achieved a{" "}
-            <span className="font-bold">LeetCode contest rating of 1570+</span>{" "}
-            and earned SQL proficiency badge.
+            Solved <span className="font-bold">600+ DSA problems</span> across
+            LeetCode and GFG; achieved a{" "}
+            <span className="font-bold">LeetCode contest rating of 1570</span>{" "}
+            and earned SQL proficiency badge for solving over 100+ SQL problems.
           </li>
           <li>
             Contributed to{" "}
-            <span className="font-bold">multiple open source projects</span>{" "}
-            with merged PRs; have{" "}
+            <span className="font-bold">several open source projects</span> with
+            merged PRs; have{" "}
             <span className="font-bold">700+ GitHub contributions</span>,
             demonstrating consistent collaboration and code quality.
           </li>

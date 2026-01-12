@@ -4,7 +4,7 @@ export default function Projects() {
       <h2 className="flex items-center text-3xl font-bold text-gray-900 dark:text-white jb">
         Key Projects
       </h2>
-      <div className="space-y-4">
+      <div className="space-y-6">
         {/* QuickGigs Project */}
         <div className="p-7 bg-black/5 rounded-2xl hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 cursor-pointer">
           <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
@@ -86,9 +86,68 @@ export default function Projects() {
             </li>
           </ul>
         </div>
+
+        {/* Google Form Autofill Extension Project */}
+        <div className="p-7 bg-black/5 rounded-2xl hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 cursor-pointer">
+          <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
+            Google Form Autofill Extension
+            <a
+              href="https://github.com/tejaspokale22/google-form-autofill"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-purple-600 hover:underline dark:text-purple-400"
+            >
+              GitHub
+            </a>
+          </p>
+
+          <p className="mb-3 text-sm text-gray-600 dark:text-gray-400">
+            JavaScript, React, Vite, Tailwind CSS, Chrome Extensions API
+            (Manifest V3)
+          </p>
+
+          <ul className="pl-5 space-y-1 list-disc text-gray-700 dark:text-gray-300">
+            <li>
+              Built a{" "}
+              <span className="font-bold">Chrome browser extension</span> to{" "}
+              <span className="font-bold">
+                auto-fill repetitive Google Forms
+              </span>{" "}
+              using saved user profiles, enabling{" "}
+              <span className="font-bold">one-click autofill</span> with
+              intelligent field detection supporting{" "}
+              <span className="font-bold">
+                text inputs, textareas, dropdowns, radio buttons, and checkboxes
+              </span>
+              .
+            </li>
+
+            <li>
+              Implemented robust{" "}
+              <span className="font-bold">profile management</span> with
+              persistent <span className="font-bold">Chrome sync storage</span>,
+              supporting standard and{" "}
+              <span className="font-bold">custom fields</span>, real-time{" "}
+              <span className="font-bold">search & filtering</span>, keyboard
+              shortcuts, and quick field operations like copy-to-clipboard.
+            </li>
+
+            <li>
+              Delivered advanced{" "}
+              <span className="font-bold">data portability and security</span>{" "}
+              features including{" "}
+              <span className="font-bold">JSON import/export</span> with
+              validation and duplicate handling,{" "}
+              <span className="font-bold">PDF profile generation</span>, fully
+              local data storage with minimal permissions, and{" "}
+              <span className="font-bold">open-source</span> support across
+              Chrome, Edge, Brave, and Chromium-based browsers.
+            </li>
+          </ul>
+        </div>
       </div>
 
-      {/* CipheDocs} */}
+      {/* CipheDocs}
       <div className="p-7 bg-black/5 rounded-2xl hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 cursor-pointer">
         <p className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
           CipherDocs
@@ -134,7 +193,7 @@ export default function Projects() {
             in academic and employment processes.
           </li>
         </ul>
-      </div>
+      </div> */}
     </section>
   );
 }

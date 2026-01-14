@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import ScrollToTop from "./components/ScrollToTop";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Tejas Pokale",
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="rubik">
+        <Analytics />
         {/* Prevent flash of incorrect theme before hydration */}
         <Script id="theme-init" strategy="beforeInteractive">{`
           try {

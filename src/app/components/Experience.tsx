@@ -118,17 +118,15 @@ export default function Experience() {
               assessment processes by improving{" "}
               <span className="font-bold">reliability by 50%</span>,
               <span className="font-bold">accuracy by 100%</span>, and overall
-              system <span className="font-bold">scalability</span> of the
-              system. <span className="font-bold">Automated</span> student
-              performance tracking with NBA accreditation workflows, reducing
-              faculty <span className="font-bold">workload by 50%</span> and
-              providing real-time data insights that improved decision-making.
+              system <span className="font-bold">scalability</span>.{" "}
+              <span className="font-bold">Automated</span> student performance
+              tracking with NBA accreditation workflows, reducing faculty{" "}
+              <span className="font-bold">workload by 50%</span> and providing
+              real-time data insights that improved decision-making.
             </li>
             <li>
-              <span className="font-bold">
-                Pioneered a technology-driven CO-PO mapping system
-              </span>{" "}
-              to enhance precision in evaluating{" "}
+              <span className="font-bold">Built a CO-PO mapping system</span> to
+              enhance precision in evaluating{" "}
               <span className="font-bold">Knowledge, Skills, and Attitude</span>{" "}
               across <span className="font-bold">20+ courses</span> for enhanced
               academic insights.

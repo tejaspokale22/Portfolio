@@ -102,7 +102,7 @@ export default function Contact() {
               </span>
             </a>
             <a
-              href="https://x.com/tejaspokale4466"
+              href="https://x.com/tejaspokale_22"
               target="_blank"
               rel="noopener noreferrer"
               className="flex gap-3 items-center px-2 py-2 rounded-lg transition-colors hover:bg-purple-50 dark:hover:bg-gray-900/40"

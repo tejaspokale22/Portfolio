@@ -24,15 +24,15 @@ export default function Projects() {
           <ul className="pl-5 mb-4 space-y-1 list-disc text-gray-700 dark:text-gray-300">
             <li>
               Developed a{" "}
-              <span className="font-bold">micro-freelancing platform</span>{" "}
-              enabling college students to monetize their skills and gain
-              hands-on experience through small-scale projects, addressing
-              challenges of entering mainstream freelance markets.
+              <span className="font-bold">freelancing platform</span> enabling
+              college students to monetize their skills and gain hands-on
+              experience through small-scale projects, addressing challenges of
+              entering mainstream freelance markets.
             </li>
             <li>
               Built a{" "}
               <span className="font-bold">real-time gig management system</span>{" "}
-              with <span className="font-bold">live chat</span>,
+              with <span className="font-bold">live chat</span>,{" "}
               <span className="font-bold">instant updates</span>,{" "}
               <span className="font-bold">Razorpay payment integration</span>,
               and an

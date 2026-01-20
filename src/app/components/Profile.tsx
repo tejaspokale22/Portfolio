@@ -12,7 +12,7 @@ export default function Profile() {
           Solver
         </p>
         <Link
-          href="https://drive.google.com/file/d/1teX46M_MKTYblWmgLFQpCj5dfjRLxLvh/view?usp=sharing"
+          href="https://drive.google.com/file/d/1laNt_TxprFmBuifv0246GBYmTlbkBTDN/view"
           target="_blank"
           className="jb inline-flex items-center px-3 py-1 mt-6 text-base font-medium text-gray-600 rounded-lg border border-gray-600 dark:text-gray-400 dark:border-gray-500 hover:text-black hover:border-black dark:hover:text-gray-300 dark:hover:border-gray-400"
         >

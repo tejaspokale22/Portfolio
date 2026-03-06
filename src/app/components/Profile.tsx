@@ -8,8 +8,7 @@ export default function Profile() {
           Tejas Pokale
         </h1>
         <p className="mb-2 font-normal text-gray-600 transition-colors duration-300 text-sm md:text-xl dark:text-gray-400 jb">
-          B.Tech IT Student | Software Engineer | OSS Contributer | Problem
-          Solver
+          B.Tech IT Student | Software Engineer | Open Source | Problem Solver
         </p>
         <Link
           href="https://drive.google.com/file/d/1laNt_TxprFmBuifv0246GBYmTlbkBTDN/view"

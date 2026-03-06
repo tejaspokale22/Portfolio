@@ -13,7 +13,7 @@ import Contact from "./components/Contact";
 import Profile from "./components/Profile";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const toggleTheme = () => {
     const newMode = !darkMode;

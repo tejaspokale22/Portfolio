@@ -4,6 +4,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import ChatAssistant from "./components/ChatAssistant";
 
 export const metadata: Metadata = {
   title: "Tejas Pokale",
@@ -32,8 +33,8 @@ export default function RootLayout({
             document.documentElement.classList.toggle('dark', shouldUseDark);
           } catch (e) {}
         `}</Script>
-
         <ScrollToTop />
+        <ChatAssistant />
         {children}
       </body>
     </html>

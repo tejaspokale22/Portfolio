@@ -25,15 +25,7 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <header className="fixed top-0 right-0 left-0 z-50 bg-white border-b border-gray-200 dark:bg-black dark:border-gray-800">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link
-            href="/"
-            className="text-2xl font-bold text-gray-900 dark:text-white dark:active:text-gray-400"
-          >
-            TP
-          </Link>
-
+        <div className="flex justify-center items-center h-16">
           {/* Desktop Navigation */}
           <nav className="hidden items-center space-x-8 md:flex">
             <Link href="#skills" className={getLinkClass("skills")}>
@@ -50,15 +42,14 @@ const Header: React.FC<HeaderProps> = ({
               onClick={toggleTheme}
               className="p-3 text-gray-600 rounded-lg cursor-pointer hover:bg-black/5 dark:text-gray-300 dark:hover:bg-white/10 group"
               aria-label="Toggle theme"
-              title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
             >
-              {darkMode ? (
-                <Sun
+              {!darkMode ? (
+                <Moon
                   size={20}
                   className="w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
                 />
               ) : (
-                <Moon
+                <Sun
                   size={20}
                   className="w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
                 />
@@ -143,19 +134,19 @@ const Header: React.FC<HeaderProps> = ({
             >
               {darkMode ? (
                 <>
-                  <Sun
-                    size={20}
-                    className="mr-3 w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
-                  />
-                  <span className="text-lg">Light Mode</span>
-                </>
-              ) : (
-                <>
                   <Moon
                     size={20}
                     className="mr-3 w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
                   />
                   <span className="text-lg">Dark Mode</span>
+                </>
+              ) : (
+                <>
+                  <Sun
+                    size={20}
+                    className="mr-3 w-5 h-5 text-gray-600 dark:text-gray-400 group-hover:text-black dark:group-hover:text-white"
+                  />
+                  <span className="text-lg">Light Mode</span>
                 </>
               )}
             </button>

@@ -6,7 +6,7 @@ export default function Experience() {
       </h2>
 
       <div className="space-y-6">
-        <div className="p-7 bg-black/5 rounded-2xl hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 cursor-pointer">
+        <div className="p-7 bg-black/5 rounded-2xl hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10">
           <p className="mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
             Full Stack Developer Intern
           </p>
@@ -60,7 +60,7 @@ export default function Experience() {
         </div>
       </div>
 
-      <div className="p-7 bg-black/5 rounded-2xl hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 cursor-pointer">
+      <div className="p-7 bg-black/5 rounded-2xl hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10">
         <p className="mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
           Open Source Contributor
         </p>
@@ -104,7 +104,7 @@ export default function Experience() {
       </div>
 
       <div className="space-y-6 ">
-        <div className="p-7 bg-black/5 rounded-2xl hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10 cursor-pointer">
+        <div className="p-7 bg-black/5 rounded-2xl hover:bg-black/10 dark:bg-white/5 dark:hover:bg-white/10">
           <p className="mb-1 text-lg font-semibold text-gray-800 dark:text-gray-200">
             Web Developer Intern
           </p>

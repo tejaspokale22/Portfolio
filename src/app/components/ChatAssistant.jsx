@@ -257,9 +257,8 @@ export default function ChatAssistant() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.2 }}
-                  className={`flex ${
-                    msg.role === "user" ? "justify-end" : "justify-start"
-                  }`}
+                  className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"
+                    }`}
                 >
                   <ChatMessage msg={msg} />
                 </motion.div>
@@ -309,7 +308,7 @@ export default function ChatAssistant() {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Ask anything about Tejas"
+                placeholder="Ask anything about me"
                 disabled={loading}
                 className="flex-1 rounded-full bg-[#303030] px-4 py-2.5 text-sm text-white placeholder:text-neutral-400 outline-none ring-0 focus:ring-0 dark:bg-neutral-300 dark:text-black dark:placeholder:text-neutral-500 dark:ring-0"
               />
@@ -336,11 +335,10 @@ const ChatMessage = React.memo(function ChatMessageComponent({ msg }) {
 
   return (
     <div
-      className={`max-w-[80%] min-w-0 rounded-xl px-4 py-2 text-sm break-words ${
-        msg.role === "user"
-          ? "bg-[#272727] text-white dark:bg-neutral-200 dark:text-black"
-          : "bg-[#3c3c3c] text-neutral-200 dark:bg-neutral-300 dark:text-black"
-      }`}
+      className={`max-w-[80%] min-w-0 rounded-xl px-4 py-2 text-sm break-words ${msg.role === "user"
+        ? "bg-[#272727] text-white dark:bg-neutral-200 dark:text-black"
+        : "bg-[#3c3c3c] text-neutral-200 dark:bg-neutral-300 dark:text-black"
+        }`}
     >
       {content}
     </div>

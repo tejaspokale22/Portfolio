@@ -27,7 +27,7 @@ export default function Contact() {
             <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
               Contact Information
             </h3>
-            <div className="flex gap-3 items-center hover:bg-purple-50 dark:hover:bg-gray-900/40 px-2 py-2 rounded-lg cursor-pointer">
+            <div className="flex gap-3 items-center hover:bg-purple-50 dark:hover:bg-gray-900/55 p-2 rounded-lg cursor-pointer">
               <span className="inline-flex justify-center items-center w-9 h-9 bg-purple-100 rounded-lg dark:bg-purple-900/30">
                 <MapPin className="w-5 h-5 text-purple-600 dark:text-purple-400" />
               </span>
@@ -35,7 +35,7 @@ export default function Contact() {
                 Pune, India
               </span>
             </div>
-            <div className="flex gap-3 items-center hover:bg-purple-50 dark:hover:bg-gray-900/40 px-2 py-2 rounded-lg cursor-pointer">
+            <div className="flex gap-3 items-center hover:bg-purple-50 dark:hover:bg-gray-900/55 p-2 rounded-lg cursor-pointer">
               <span className="inline-flex justify-center items-center w-9 h-9 bg-purple-100 rounded-lg dark:bg-purple-900/30">
                 <svg
                   className="w-5 h-5 text-purple-600 dark:text-purple-400"
@@ -52,7 +52,7 @@ export default function Contact() {
                 tejaspokale22@gmail.com
               </a>
             </div>
-            <div className="flex gap-3 items-center hover:bg-purple-50 dark:hover:bg-gray-900/40 px-2 py-2 rounded-lg cursor-pointer">
+            <div className="flex gap-3 items-center hover:bg-purple-50 dark:hover:bg-gray-900/55 p-2 rounded-lg cursor-pointer">
               <span className="inline-flex justify-center items-center w-9 h-9 bg-purple-100 rounded-lg dark:bg-purple-900/30">
                 <svg
                   className="w-5 h-5 text-purple-600 dark:text-purple-400"
@@ -79,7 +79,7 @@ export default function Contact() {
               href="https://github.com/tejaspokale22"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-3 items-center px-2 py-2 rounded-lg transition-colors hover:bg-purple-50 dark:hover:bg-gray-900/40"
+              className="flex gap-3 items-center px-2 py-2 rounded-lg transition-colors hover:bg-purple-50 dark:hover:bg-gray-900/55"
             >
               <span className="inline-flex justify-center items-center w-9 h-9 bg-purple-100 rounded-lg dark:bg-purple-900/30">
                 <GithubIcon className="w-5 h-5 text-purple-600 dark:text-purple-400" />
@@ -92,7 +92,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/tejaspokale22"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-3 items-center px-2 py-2 rounded-lg transition-colors hover:bg-purple-50 dark:hover:bg-gray-900/40"
+              className="flex gap-3 items-center px-2 py-2 rounded-lg transition-colors hover:bg-purple-50 dark:hover:bg-gray-900/55"
             >
               <span className="inline-flex justify-center items-center w-9 h-9 bg-purple-100 rounded-lg dark:bg-purple-900/30">
                 <LinkedinIcon className="w-5 h-5 text-purple-600 dark:text-purple-400" />
@@ -105,7 +105,7 @@ export default function Contact() {
               href="https://x.com/tejaspokale_22"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex gap-3 items-center px-2 py-2 rounded-lg transition-colors hover:bg-purple-50 dark:hover:bg-gray-900/40"
+              className="flex gap-3 items-center px-2 py-2 rounded-lg transition-colors hover:bg-purple-50 dark:hover:bg-gray-900/55"
             >
               <span className="inline-flex justify-center items-center w-9 h-9 bg-purple-100 rounded-lg dark:bg-purple-900/30">
                 <Twitter className="w-5 h-5 text-purple-600 dark:text-purple-400" />
